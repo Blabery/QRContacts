@@ -7,23 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CB68483E257653D600BF0DE1 /* ContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB68483D257653D600BF0DE1 /* ContactsViewController.swift */; };
+		CB8441A225765E0600413435 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8441A125765E0600413435 /* Contact.swift */; };
+		CB8441A6257669F600413435 /* ContactViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8441A5257669F600413435 /* ContactViewCell.swift */; };
 		CBC8B61E2575148C0011D763 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC8B61D2575148C0011D763 /* AppDelegate.swift */; };
 		CBC8B6202575148C0011D763 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC8B61F2575148C0011D763 /* SceneDelegate.swift */; };
-		CBC8B6222575148C0011D763 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC8B6212575148C0011D763 /* ViewController.swift */; };
 		CBC8B6252575148C0011D763 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBC8B6232575148C0011D763 /* Main.storyboard */; };
 		CBC8B6272575148F0011D763 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBC8B6262575148F0011D763 /* Assets.xcassets */; };
 		CBC8B62A2575148F0011D763 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBC8B6282575148F0011D763 /* LaunchScreen.storyboard */; };
+		CBD32CB625767F1600CA8265 /* ContactInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD32CB525767F1600CA8265 /* ContactInfoViewController.swift */; };
+		CBD32CBA25769D9800CA8265 /* QrScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD32CB925769D9800CA8265 /* QrScannerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		CBC8B61A2575148C0011D763 /* lab_3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = lab_3.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB68483D257653D600BF0DE1 /* ContactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsViewController.swift; sourceTree = "<group>"; };
+		CB8441A125765E0600413435 /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
+		CB8441A5257669F600413435 /* ContactViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewCell.swift; sourceTree = "<group>"; };
+		CBC8B61A2575148C0011D763 /* QRContacts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QRContacts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBC8B61D2575148C0011D763 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CBC8B61F2575148C0011D763 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CBC8B6212575148C0011D763 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CBC8B6242575148C0011D763 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CBC8B6262575148F0011D763 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CBC8B6292575148F0011D763 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CBC8B62B2575148F0011D763 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CBD32CB525767F1600CA8265 /* ContactInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactInfoViewController.swift; sourceTree = "<group>"; };
+		CBD32CB925769D9800CA8265 /* QrScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QrScannerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,10 +45,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CB68483C2576538000BF0DE1 /* Supported Files */ = {
+			isa = PBXGroup;
+			children = (
+				CBC8B6282575148F0011D763 /* LaunchScreen.storyboard */,
+				CBC8B61D2575148C0011D763 /* AppDelegate.swift */,
+				CBC8B61F2575148C0011D763 /* SceneDelegate.swift */,
+				CBC8B6262575148F0011D763 /* Assets.xcassets */,
+				CBC8B62B2575148F0011D763 /* Info.plist */,
+			);
+			path = "Supported Files";
+			sourceTree = "<group>";
+		};
 		CBC8B6112575148C0011D763 = {
 			isa = PBXGroup;
 			children = (
-				CBC8B61C2575148C0011D763 /* lab_3 */,
+				CBC8B61C2575148C0011D763 /* QRContacts */,
 				CBC8B61B2575148C0011D763 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -48,31 +68,31 @@
 		CBC8B61B2575148C0011D763 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CBC8B61A2575148C0011D763 /* lab_3.app */,
+				CBC8B61A2575148C0011D763 /* QRContacts.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		CBC8B61C2575148C0011D763 /* lab_3 */ = {
+		CBC8B61C2575148C0011D763 /* QRContacts */ = {
 			isa = PBXGroup;
 			children = (
-				CBC8B61D2575148C0011D763 /* AppDelegate.swift */,
-				CBC8B61F2575148C0011D763 /* SceneDelegate.swift */,
-				CBC8B6212575148C0011D763 /* ViewController.swift */,
+				CB8441A125765E0600413435 /* Contact.swift */,
+				CBD32CB525767F1600CA8265 /* ContactInfoViewController.swift */,
+				CB68483D257653D600BF0DE1 /* ContactsViewController.swift */,
+				CB8441A5257669F600413435 /* ContactViewCell.swift */,
+				CBD32CB925769D9800CA8265 /* QrScannerViewController.swift */,
 				CBC8B6232575148C0011D763 /* Main.storyboard */,
-				CBC8B6262575148F0011D763 /* Assets.xcassets */,
-				CBC8B6282575148F0011D763 /* LaunchScreen.storyboard */,
-				CBC8B62B2575148F0011D763 /* Info.plist */,
+				CB68483C2576538000BF0DE1 /* Supported Files */,
 			);
-			path = lab_3;
+			path = QRContacts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		CBC8B6192575148C0011D763 /* lab_3 */ = {
+		CBC8B6192575148C0011D763 /* QRContacts */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CBC8B62E2575148F0011D763 /* Build configuration list for PBXNativeTarget "lab_3" */;
+			buildConfigurationList = CBC8B62E2575148F0011D763 /* Build configuration list for PBXNativeTarget "QRContacts" */;
 			buildPhases = (
 				CBC8B6162575148C0011D763 /* Sources */,
 				CBC8B6172575148C0011D763 /* Frameworks */,
@@ -82,9 +102,9 @@
 			);
 			dependencies = (
 			);
-			name = lab_3;
+			name = QRContacts;
 			productName = lab_3;
-			productReference = CBC8B61A2575148C0011D763 /* lab_3.app */;
+			productReference = CBC8B61A2575148C0011D763 /* QRContacts.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -101,7 +121,7 @@
 					};
 				};
 			};
-			buildConfigurationList = CBC8B6152575148C0011D763 /* Build configuration list for PBXProject "lab_3" */;
+			buildConfigurationList = CBC8B6152575148C0011D763 /* Build configuration list for PBXProject "QRContacts" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -114,7 +134,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CBC8B6192575148C0011D763 /* lab_3 */,
+				CBC8B6192575148C0011D763 /* QRContacts */,
 			);
 		};
 /* End PBXProject section */
@@ -137,9 +157,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CBC8B6222575148C0011D763 /* ViewController.swift in Sources */,
+				CB68483E257653D600BF0DE1 /* ContactsViewController.swift in Sources */,
+				CB8441A225765E0600413435 /* Contact.swift in Sources */,
+				CBD32CB625767F1600CA8265 /* ContactInfoViewController.swift in Sources */,
 				CBC8B61E2575148C0011D763 /* AppDelegate.swift in Sources */,
 				CBC8B6202575148C0011D763 /* SceneDelegate.swift in Sources */,
+				CBD32CBA25769D9800CA8265 /* QrScannerViewController.swift in Sources */,
+				CB8441A6257669F600413435 /* ContactViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,12 +312,12 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NWU3UR5FK7;
-				INFOPLIST_FILE = lab_3/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/QRContacts/Supported Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "yakubets-v.lab-3";
+				PRODUCT_BUNDLE_IDENTIFIER = "yakubets-v.QRContacts";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -307,12 +331,12 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NWU3UR5FK7;
-				INFOPLIST_FILE = lab_3/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/QRContacts/Supported Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "yakubets-v.lab-3";
+				PRODUCT_BUNDLE_IDENTIFIER = "yakubets-v.QRContacts";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -322,7 +346,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		CBC8B6152575148C0011D763 /* Build configuration list for PBXProject "lab_3" */ = {
+		CBC8B6152575148C0011D763 /* Build configuration list for PBXProject "QRContacts" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CBC8B62C2575148F0011D763 /* Debug */,
@@ -331,7 +355,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CBC8B62E2575148F0011D763 /* Build configuration list for PBXNativeTarget "lab_3" */ = {
+		CBC8B62E2575148F0011D763 /* Build configuration list for PBXNativeTarget "QRContacts" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CBC8B62F2575148F0011D763 /* Debug */,
